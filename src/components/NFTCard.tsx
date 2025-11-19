@@ -177,7 +177,7 @@ export default function NFTCard({
 
       <div className="mb-3">
         <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
-          {metadata?.name || `Token ID: ${tokenId}`}
+          {metadata?.name ? `#${tokenId} · ${metadata.name}` : `Token #${tokenId}`}
         </h3>
         {metadata?.description && (
           <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1 line-clamp-2">
